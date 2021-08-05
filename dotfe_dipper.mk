@@ -6,11 +6,21 @@
 
 $(call inherit-product, device/xiaomi/dipper/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common dotOS-FE stuff.
+$(call inherit-product, vendor/dotfe/config/common.mk)
+
+# Boot Animation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# dotOS-FE Stuff
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_USES_BLUR := true
+
+# Device Maintainer
+DEVICE_MAINTAINER := NamaskaraGusthiW
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_dipper
+PRODUCT_NAME := dotfe_dipper
 PRODUCT_DEVICE := dipper
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8
