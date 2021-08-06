@@ -13,11 +13,10 @@ $(call inherit-product, vendor/dotfe/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # dotOS-FE Stuff
+TARGET_INCLUDE_WIFI_EXT := true
+WITH_GAPPS := false
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_USES_BLUR := true
-
-# Device Maintainer
-DEVICE_MAINTAINER := NamaskaraGusthiW
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := dotfe_dipper
